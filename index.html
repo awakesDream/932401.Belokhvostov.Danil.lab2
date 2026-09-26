@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешественник</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .countries {
+            column-count: 2;
+            column-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Белохвостов Данил</h1>
+        <p>Путешественник</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#countries">Страны</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section>
+                <img src="https://n1s1.hsmedia.ru/be/90/34/be9034d762857e5ba510937ce31b14b9/728x728_1_666010ab55120072825c74de5a7e19b0@1000x1000_0x10fmyjvQ_7882540427738188474.jpg.webp" alt="Портрет" width="150" height="150">
+            </section>
+
+            <section id="skills">
+                <h2 class="static">Навыки</h2>
+                <ul>
+                    <li>Знание базового английского</li>
+                    <li>Ориентирование по карте</li>
+                    <li>Оказание первой медицинской помощи</li>
+                </ul>
+            </section>
+
+            <section id="countries">
+                <h2>Посещённые страны</h2>
+                <div class="countries">
+                    <ol>
+                        <li>Франция</li>
+                        <li>Япония</li>
+                        <li>Норвегия</li>
+                        <li>Исландия</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Связь со мной</h2>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="username" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div>
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Привет, понравился" required></textarea>
+                    </div>
+                    <button type="submit" style="font-size: 16px;">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <span class="badge">Имба</span>
+            <h3>Любимое место</h3>
+            <p>Музей Лувра: Париж, Франция</p>
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/960px-Louvre_Museum_Wikimedia_Commons.jpg?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="Фотография Лувра" width="150" height="150">
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Белохвостов Данил.</p>
+    </footer>
+
+</body>
+</html>
